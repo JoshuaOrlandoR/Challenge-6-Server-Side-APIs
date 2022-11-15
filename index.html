@@ -5,40 +5,55 @@
         <title>Weather App</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="./assets/css/reset.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
     <body>
-<!-- All content of searched city will go in this section-->
-        <div id="weatherCard">
-            <div class="citySearch">
-                <input type="text" class="search-bar"> 
-                <button class="searchBtn Btn"> Search!</button>
+        <!--Header/Page title-->
+        <div class="containerJumbo">
+            <div class="jumbotron text-center p-2 mb-2 bg-transparent text-white">
+              <h2 class="pageTitle">Five Day Weather Dashboard</h2>      
+              <p class="createdBy">Created by Joshua Orlando R</p>
             </div>
-            <div class="weatherStats">
-                <h2 class="city statisticText" >Placeholder City</h2>
-                <h1 class="temperature statisticText"> Placeholder Temp</div>
-                    <div class="tempMin statisticText">Min Value</div>
-                    <div class="tempMax statisticText"> Max Value</div>
-                    <div class="precipitation statisticText"> Placeholder Precipitation</div>
-                <div class="humidity statisticText"> Placeholder Humidity</div>
+        </div>
+        <div class="container-fluid containerPrimary">
+            <div class="row">
+
+                <div class="col-12 col-md-4 col-xl-4 searchColumn">
+                    <label class="text-center text-white m-2 searchLabel"> Enter City Name</label>
+
+                    <div class="input-group m-2">
+                        <input type="text" class="form-control-sm cityNameText" placeholder="Toronto">
+                        <div class="input-group-append btnHolder">
+                            <button class="btn btn-primary searchBtn" type="button" id="button-addon2">🔍</button>
+                        </div>
+                    </div>
+                <!--Will create elements using JS (probably buttons) based on search history for easy access-->
+                    <div class="searchHistoryContainer"></div>
+                </div>
+                <!--Current Day weather stats-->
+                <div class="col-12 col-md-8 col-xl-8 infoColumn">
+                    <div class="row presentDayForcast">
+                        <div class="card bg-dark m-3 presentDayCard">
+                            <h3 class="card-header currentCityName text-white"> Toronto(Placeholder)</h2>
+                            <h4 class="card-header currentCityDate text-white">Current Date(Placeholder)</h4>
+                            <div class="card-body currentCityWeatherStats text-white"> 
+                                Current Weather stats using API
+                            </div>
+                        </div>
+                    </div>
+                <!--5 day forecast will appear below current day weather stats-->
+                    <div class="futureForecast text-white">
+                        Placeholder
+                    </div>
+                </div>
+
             </div>
         </div>
 
-<!--Either put previously searched cities in weatherCard or perhaps along the left or right side of screen-->
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"> </script>
     </body>
 </html>
