@@ -33,3 +33,16 @@ body {
 .currentCityWeatherStats {
     font-size: 22px;
 }
+
+.oldSearchBtn {
+    background-color:rgb(21, 17, 46) ;
+    border-radius: 15px;
+}
+
+.oldSearchBtn:hover {
+    background-color: rgb(12, 12, 67);
+}
+
+.oldSearchBtn:active {
+    background-color: rgb(48, 48, 90);
+}

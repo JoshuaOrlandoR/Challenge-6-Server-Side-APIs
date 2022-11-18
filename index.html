@@ -25,20 +25,22 @@
                     <div class="input-group m-2">
                         <input type="text" class="form-control-sm cityNameText" placeholder="Toronto">
                         <div class="input-group-append btnHolder">
-                            <button class="btn btn-primary searchBtn" type="button" id="button-addon2">🔍</button>
+                            <button class="btn btn-primary searchBtn magnifyButton" type="button" id="button-addon2">🔍</button>
                         </div>
                     </div>
                 <!--Will create elements using JS (probably buttons) based on search history for easy access-->
-                    <div class="searchHistoryContainer"></div>
+                    <div class="searchHistory container">
+                    </div>
                 </div>
                 <!--Current Day weather stats-->
                 <div class="col-12 col-md-8 col-xl-8 infoColumn">
                     <div class="row presentDayForcast">
                         <div class="card bg-dark m-3 presentDayCard">
                             <h3 class="card-header currentCityName text-white"> Toronto(Placeholder)</h2>
-                            <h4 class="card-header currentCityDate text-white">Current Date(Placeholder)</h4>
+                            <h4 class="card-header currentCityTime text-white"> Placeholder Time</h4>
+                            <h4 class="card-header currentCityWeatherDescription text-white">Placeholder</h4>
                             <div class="card-body currentCityWeatherStats text-white"> 
-                                Current Weather stats using API
+                               
                             </div>
                         </div>
                     </div>
