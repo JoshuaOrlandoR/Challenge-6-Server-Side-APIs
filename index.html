@@ -19,7 +19,7 @@
         <div class="container-fluid containerPrimary">
             <div class="row">
 
-                <div class="col-12 col-md-4 col-xl-4 searchColumn">
+                <div class="col-12 col-md-3 col-xl-3 searchColumn">
                     <label class="text-center text-white m-2 searchLabel"> Enter City Name</label>
 
                     <div class="input-group m-2">
@@ -33,20 +33,50 @@
                     </div>
                 </div>
                 <!--Current Day weather stats-->
-                <div class="col-12 col-md-8 col-xl-8 infoColumn">
+                <div class="col-12 col-md-9 col-xl-9 infoColumn">
                     <div class="row presentDayForcast">
                         <div class="card bg-dark m-3 presentDayCard">
-                            <h3 class="card-header currentCityName text-white"> Toronto(Placeholder)</h2>
-                            <h4 class="card-header currentCityTime text-white"> Placeholder Time</h4>
-                            <h4 class="card-header currentCityWeatherDescription text-white">Placeholder</h4>
+                            <h3 class="card-header currentCityName text-white"> Please enter a city name in the text field to the left!</h2>
+                            <h4 class="card-header currentCityTime">Time Placeholder </h4>
+                            <img class="weatherIconCurrent"/>
+                            <h4 class="card-header currentCityWeatherDescription text-white"></h4>
                             <div class="card-body currentCityWeatherStats text-white"> 
                                
                             </div>
                         </div>
                     </div>
                 <!--5 day forecast will appear below current day weather stats-->
-                    <div class="futureForecast text-white">
-                        Placeholder
+                    <div class="futureForecastCont">
+                       <div class="row">
+                            <div class="col-sm forecastDay1 card bg-secondary m-3">
+
+                                <img class="weatherIconDay1 weatherForecastIcon"/>
+
+                            </div>
+
+                            <div class="col-sm forecastDay2 card bg-secondary m-3">
+
+                                <img class="weatherIconDay2 weatherForecastIcon"/>
+
+                            </div>
+
+                            <div class="col-sm forecastDay3 card bg-secondary m-3">
+
+                                <img class="weatherIconDay3 weatherForecastIcon"/>
+                            </div>
+
+                            <div class="col-sm forecastDay4 card bg-secondary m-3">
+
+                                <img class="weatherIconDay4 weatherForecastIcon"/>
+
+                            </div>
+
+                            <div class="col-sm forecastDay5 card bg-secondary m-3">
+
+                                <img class="weatherIconDay5 weatherForecastIcon"/>
+                                
+                            </div>
+                       </div>
                     </div>
                 </div>
 
