@@ -1,7 +1,5 @@
 // Creating variable so API key is easily accessed and testing link concatination
 const apiKey = "726326cfb37bc9ce0441edd5bfd0266c"
-urlTest = "https://api.test" + 56 + ".com"
-console.log(urlTest);
 
 //Link for reference - had to reformat parameters otherwise link would not work for some reason
 // https://api.openweathermap.org/data/2.5/weather?q={city%20name}&appid={API%20key}&units=metric
@@ -110,7 +108,7 @@ function callForecast() {
     .then(function (response) {
         console.log(response)
         //Day 1 of Forecast
-        var dayOneDate = $("<h6>").text(response.list[3].dt_txt.split("09")[0]);
+        var dayOneDate = $("<h6>").text(response.list[3].dt_txt.split("12")[0]);
         forecastDay1.append(dayOneDate);
 
         $(".weatherIconDay1").attr("src", `https://openweathermap.org/img/wn/${response.list[3].weather[0].icon}@2x.png`);
@@ -128,7 +126,7 @@ function callForecast() {
         forecastDay1.append(dayOneWindSpeed);
 
         //Day 2 of Forecast
-        var dayTwoDate = $("<h6>").text(response.list[11].dt_txt.split("09")[0]);
+        var dayTwoDate = $("<h6>").text(response.list[11].dt_txt.split("12")[0]);
         forecastDay2.append(dayTwoDate);
 
         $(".weatherIconDay2").attr("src", `https://openweathermap.org/img/wn/${response.list[11].weather[0].icon}@2x.png`);
@@ -148,7 +146,7 @@ function callForecast() {
 
 
         //Day 3 of Forecast
-        var dayThreeDate = $("<h6>").text(response.list[19].dt_txt.split("09")[0]);
+        var dayThreeDate = $("<h6>").text(response.list[19].dt_txt.split("12")[0]);
         forecastDay3.append(dayThreeDate);
 
         $(".weatherIconDay3").attr("src", `https://openweathermap.org/img/wn/${response.list[19].weather[0].icon}@2x.png`);
@@ -167,7 +165,7 @@ function callForecast() {
         forecastDay3.append(dayThreeWindSpeed);
 
         //Day 4 of Forecast
-        var dayFourDate = $("<h6>").text(response.list[27].dt_txt.split("09")[0]);
+        var dayFourDate = $("<h6>").text(response.list[27].dt_txt.split("12")[0]);
         forecastDay4.append(dayFourDate);
 
         $(".weatherIconDay4").attr("src", `https://openweathermap.org/img/wn/${response.list[27].weather[0].icon}@2x.png`);
@@ -186,7 +184,7 @@ function callForecast() {
         forecastDay4.append(dayFourWindSpeed);
 
         //Day 5 of Forecast
-        var dayFiveDate = $("<h6>").text(response.list[35].dt_txt.split("09")[0]);
+        var dayFiveDate = $("<h6>").text(response.list[35].dt_txt.split("12")[0]);
         forecastDay5.append(dayFiveDate);
 
         $(".weatherIconDay5").attr("src", `https://openweathermap.org/img/wn/${response.list[35].weather[0].icon}@2x.png`);
