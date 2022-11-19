@@ -3,8 +3,9 @@ body {
     height: 100vh;
     margin: 0;
     background:rgb(36, 37, 49);
-    background-image: url('/assets/images/nasa-medium.jpg');
-}
+    background-size: 103%;
+    background-image: url('https://lh3.googleusercontent.com/pw/AL9nZEXTbFdJhT4TIzPKQ3m6KIdT3oUdlxYSYAvzM6etbi955KtlxIlXyKPbXxa7zIxGgF4Lv9iPTa4Mn2DNKuFsRBc6x1gRybOIub6udtTVCNutmcpunJzYZ3gPnlsEIHWOGvYhuS8st4oy8-KYPeNVSI15cH1tmNM1G9rBtLW1la8Sv4foxu-aP5gPgsMhh9a7-uhvTtaxMSyb3VqyUcneEPoB4pFT9de3l3VKS-GXURzztooi3IM8N9wiqAmvUo2GvUnvps5_IzKg4BiHfoGY4HJGNZvg80TKu-_S2GcmIj7988a-LVZ56oBQ4wMVTldYLskuMyZdNvWpDPASyLd295lrSIkGtgMGtB75cNRp7cLLa4ZzqfwRqRpYsDQDXLECrsTbvl9gTxy615AvTpbaeID_U0IcqzCnTE2YbIFfPyAJVGkxcId4DUSytCUkVe9-sgQ0swesfU4MeKDy5KT7JvYw6N8Mw6ad_3LXuGRGTLTrhJWRz3wPr0uFu9HhToigaf2FTtVEksFLoJx45pa89-scLcdEZMQ4Wuwgs2Qd18jzz2Mw7yRtcTABKmHDjn1bzeHZUNhlurzMUVi1q9_ihG9MPqJf830SmUs8VpJb-Ck4YuMJ_rXuREvebTceCWxp9vTTMCGBRCOsH_GhNYYiH9OrgUpI-QwyZqzAbWZFvK1lmI6hzEfVzGnk8nbjSPaBM_cwDX3IiQZYenVi0fAMiwC2rKAgyqWQReN4_Dxi6xnNGxTaQaUv1WW4dZ4ssv_OsgeioCLNufu857ei72I5I-HedLabb_mlLXkkjmLXr9KUrJ9dYW0f5_snSPH_dNizpWNI8UjO_LtZxjBbzNpJx4nSW19wtmqARDfs-9Ojv2G6cv5N3wEReaW9v96mLqTv9-3k_znumxtynsnntEilm48F1w=w1409-h938-no?authuser=0');
+}   
 
 .pageTitle {
     font-size: 40px ;
