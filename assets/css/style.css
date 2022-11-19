@@ -1,0 +1,71 @@
+/* Additional Styling to support bootstrap */
+body {
+    height: 100vh;
+    margin: 0;
+    background:rgb(36, 37, 49);
+    background-image: url('/assets/images/nasa-medium.jpg');
+}
+
+.pageTitle {
+    font-size: 40px ;
+}
+
+.searchLabel {
+    font-size: 22px;
+}
+
+.cityNameText {
+    border-radius: 25px;
+}
+
+.presentDayCard {
+    max-width: 800px;
+}
+
+.currentCityName {
+    font-size: 28px ;
+}
+
+.currentCityDate {
+    font-size: 20px;
+}
+
+.currentCityTime {
+    font-size: 22px;
+    color: rgb(55, 54, 54);
+}
+
+.currentCityWeatherStats {
+    font-size: 22px;
+}
+
+.oldSearchBtn {
+    background-color:rgb(21, 17, 46) ;
+    border-radius: 15px;
+}
+
+.oldSearchBtn:hover {
+    background-color: rgb(12, 12, 67);
+}
+
+.oldSearchBtn:active {
+    background-color: rgb(48, 48, 90);
+}
+
+.weatherIconCurrent {
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.futureForecastCont {
+    color: white;
+}
+
+h6 {
+    color: rgb(14, 52, 53);
+}
+
+.weatherForecastIcon{
+    max-height: 75px;
+    max-width: 75px;
+}
